@@ -5,6 +5,7 @@ class Song:
         self.id = id
         self.has_lyrics = has_lyrics
         self.has_subtitles = has_subtitles
+        self.duration = 0
 
     def __str__(self) -> str:
         return self.artist + ' - ' + self.title
