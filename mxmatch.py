@@ -17,6 +17,7 @@ class Musixmatch:
             "q_track": song.title, 
             "q_artist": song.artist, 
             "f_has_lyrics": 1, 
+            "f_has_subtitles": 1, 
             "apikey": self.token
         }
         req = urllib.request.Request(constants.base_url + endpoint_path + "?" + urllib.parse.urlencode(params, quote_via=urllib.parse.quote))
@@ -42,11 +43,16 @@ class Musixmatch:
                 error_message = constants.status_codes[status_code]
             raise Exception(error_message)
                 
-
         tracklist_arr = body["body"]["track_list"]
         tracks = []
         for track in tracklist_arr:
             tr = track["track"]
-            tracks.append(Song(tr["track_name"], tr["artist_name"]))
+            song_title = tr["track_name"]
+            song_artist = tr["artist_name"]
+            song_id = tr["commontrack_id"]
+            song_has_lyrics = tr["has_lyrics"]
+            song_has_subtitles = tr["has_subtitles"]
+            if song_id:
+                tracks.append(Song(song_title, song_artist, song_id, song_has_lyrics, song_has_subtitles))
         return tracks
         

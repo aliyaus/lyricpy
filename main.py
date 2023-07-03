@@ -8,7 +8,7 @@ def main():
   MX_TOKEN = os.getenv('API_KEY')
   mx = Musixmatch(MX_TOKEN)
   song = Song("Starboy", "The Weeknd")
-  print("Retrieving info for: ", song.info)
+  print("Retrieving info for: ", song.__str__())
   try:
     tracks = mx.search_track(song)
     for song in tracks:
