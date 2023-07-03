@@ -1,7 +1,10 @@
 # lyricpy
 
 # Overview/Objective 
-- on button click -> fetch lyrics for a single song -> sync the lyrics -> and display each line to LCD display 
+- on button click -> fetch lyrics for a single song -> sync the lyrics -> and display each line to LCD display
+
+# How to run 
+1. run the following command in your terminal `python3 main.py` 
 
 # Prerequisites 
 ### Set API Key 
