@@ -1,7 +1,7 @@
 # lyricpy
 
 # Overview/Objective 
-- on button click -> fetch lyrics for a single song -> sync the lyrics -> and display each line to LCD display 
+- on button click ---> fetch lyrics for a single song ---> sync the lyrics ---> and display each line to LCD display 
 
 # References 
 * https://github.com/fashni/MxLRC
