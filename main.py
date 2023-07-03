@@ -9,10 +9,12 @@ def main():
   mx = Musixmatch(MX_TOKEN)
   song = Song("Starboy", "The Weeknd")
   print("Retrieving info for: ", song.__str__())
+  print()
   try:
     tracks = mx.search_track(song)
-    for song in tracks:
-        print(song.info)
+    final_song = tracks[0]
+    lyrics = mx.get_lyrics(final_song)
+    print(lyrics)
   except Exception as e:
     print(f"An error occurred: {e}")
   
