@@ -80,6 +80,9 @@ class Musixmatch:
 
         TODO: Need to look into how to implement LRC style syncing with either the subtitle & translation method or another implementation.
         This would allow to sync the lyrics with the song's timing, providing a more dynamic and engaging experience for the user.
+        The following endpoints provided by musixmatch include timestamps:
+        * https://developer.musixmatch.com/documentation/api-reference/track-subtitle-translation-get
+        * https://developer.musixmatch.com/documentation/api-reference/track-subtitle-get
 
         Parameters:
         song (Song): The Song object for which lyrics are to be fetched.
