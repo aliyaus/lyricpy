@@ -4,17 +4,19 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import constants
+from song import Song
 
 class Musixmatch:
 
     def __init__(self, token = None):
         self.token = token
 
-    def get_track(self):
-        print("Getting track")
-        endpoint_path = "track.get"
+    def search_track(self, song):
+        endpoint_path = "track.search"
         params = {
-            "commontrack_id": "5920049",
+            "q_track": song.title, 
+            "q_artist": song.artist, 
+            "f_has_lyrics": 1, 
             "apikey": self.token
         }
         req = urllib.request.Request(constants.base_url + endpoint_path + "?" + urllib.parse.urlencode(params, quote_via=urllib.parse.quote))
@@ -32,14 +34,19 @@ class Musixmatch:
         
         body = r["message"]
 
-        if body["header"]["status_code"] != 200:
-            if body["header"]["status_code"] == 404:
-                print('Song not found.')
-            elif body["header"]["status_code"] == 401:
-                print('Timed out. Change the token or wait a few minutes before trying again.')
-            else:
-                print(f'Requested error: {body["matcher.track.get"]["header"]}')
-            return
+        status_code = body["header"]["status_code"]
 
-        return body["body"]["track"]
+        if status_code != 200:
+            error_message = "API request could not be complete at this time."
+            if status_code in constants.status_codes:
+                error_message = constants.status_codes[status_code]
+            raise Exception(error_message)
+                
+
+        tracklist_arr = body["body"]["track_list"]
+        tracks = []
+        for track in tracklist_arr:
+            tr = track["track"]
+            tracks.append(Song(tr["track_name"], tr["artist_name"]))
+        return tracks
         
