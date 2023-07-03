@@ -1,0 +1,96 @@
+# .gitignore
+
+# Python related
+__pycache__/
+*.py[cod]
+*$
+*.so
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyCharm related
+.idea/
+*.iml
+
+# Jupyter Notebook related
+.ipynb_checkpoints/
+
+# Environment related
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Django related
+*.log
+local_settings.py
+db.sqlite3
+media/
+
+# Flask related
+instance/
+.webassets-cache
+
+# Database
+*.sqlite
+
+# If using dotenv, ignore .env file
+.env
+
+# Log files
+*.log
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Other
+.DS_Store
+*.swp
+*~
+project/settings/local.py
+db.sqlite3
+db.sqlite3-journal
+
+# vscode related
+.vscode/
+
+# Miscellaneous
+*.bak
+*.swp
+*~
+*.pyo
+*#
+
+# Directories likely to hold sensitive information
+secrets/
+
+# MacOS
+.DS_Store
