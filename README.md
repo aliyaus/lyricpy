@@ -16,7 +16,7 @@
 * https://robertopozzi.medium.com/how-to-setup-ssh-to-connect-your-raspberry-pi-6dac4e454731
 
 # Hardware 
-* Raspberry Pi
+* Raspberry Pi Model B (3rd generation & up) 
 * IIC I2C TWI Serial LCD 2004 20x4 Display Module with I2C Interface Adapter Blue Backlight
 
 # Future enhancements & ideas
