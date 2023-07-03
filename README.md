@@ -6,7 +6,7 @@
 # References 
 * https://github.com/fashni/MxLRC
 
-### Downstream APIs
+#### Downstream APIs
 * for lyric fetching - https://developer.musixmatch.com/documentation 
 
 ### Connect LCD to Pi
