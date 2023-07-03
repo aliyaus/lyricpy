@@ -15,6 +15,10 @@
 ### Setup SSH to Pi
 * https://robertopozzi.medium.com/how-to-setup-ssh-to-connect-your-raspberry-pi-6dac4e454731
 
+# Hardware 
+* Raspberry Pi
+* IIC I2C TWI Serial LCD 2004 20x4 Display Module with I2C Interface Adapter Blue Backlight
+
 # Future enhancements & ideas
 - add LED lights to glow when device is listening to detect song 
 - add song detection 
