@@ -3,9 +3,6 @@
 # Overview/Objective 
 - on button click -> fetch lyrics for a single song -> sync the lyrics -> and display each line to LCD display
 
-# How to run 
-1. run the following command in your terminal `python3 main.py` 
-
 # Prerequisites 
 ### Set API Key 
 1. setup a musixmatch account and generate an API key
@@ -15,6 +12,11 @@
 import os
 api_key = os.getenv('API_KEY')
 ```
+
+# How to run 
+1. export your API key to environment variables using the following command `export API_KEY=your_api_key`
+2. run the following command in your terminal `python3 main.py` 
+
 
 # References 
 * https://github.com/fashni/MxLRC
