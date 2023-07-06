@@ -14,7 +14,7 @@ api_key = os.getenv('API_KEY')
 ```
 
 # How to run 
-1. export your API key to environment variables using the following command `export API_KEY=your_api_key`
+1. run `pip install -r requirements.txt` to install required packages 
 2. run the following command in your terminal `python3 main.py` 
 
 
