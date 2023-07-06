@@ -21,6 +21,7 @@ api_key = os.getenv('API_KEY')
 # References 
 * https://github.com/fashni/MxLRC
 * https://github.com/akashrchandran/spotify-lyrics-api
+* https://www.youtube.com/watch?v=3XLjVChVgec&t=122s
 
 #### Downstream APIs
 * for lyric fetching - https://developer.musixmatch.com/documentation 
