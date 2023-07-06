@@ -12,14 +12,8 @@ def main():
   song = Song("Starboy", "The Weeknd")
   print("Retrieving info for: ", song.__str__())
   print()
-  # try:
-  #   tracks = mx.search_track(song)
-  #   final_song = tracks[0]
-  #   lyrics = mx.get_lyrics(final_song)
-  #   print(lyrics)
-  # except Exception as e:
-  #   print(f"An error occurred: {e}")
-  lrc = syncedlyrics.search("[Starboy] [The Weeknd]")
+  s = f"[{song.title}] [{song.artist}]"
+  lrc = syncedlyrics.search(s)
   print(lrc)
   
 if __name__ == "__main__":
