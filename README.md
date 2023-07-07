@@ -30,8 +30,16 @@ api_key = os.getenv('API_KEY')
 #### Connect LCD to Pi
 * https://www.youtube.com/watch?v=3XLjVChVgec&t=122s
 
-#### Setup SSH to Pi
-* https://robertopozzi.medium.com/how-to-setup-ssh-to-connect-your-raspberry-pi-6dac4e454731
+#### Setup SSH from VS Code to Pi
+1. connect raspberry pi to internet using WiFi or LAN 
+2. open Preferences -> Raspberry Pi Configurations
+3. in Interfaces tab enable SSH using `Enable SSH` 
+4. reboot raspberry pi 
+5. open terminal -> run the command `hostname -I` to get the IP address for the pi 
+6. in the machine you are wanting to connect to pi using SSH open VS Code & install the `Remote - SSH` extension
+7. once the extension installed -> open the Remote Explorer in the left-hand pane 
+8. select `+` next to SSH and enter the following `<your_pi_username>@<your_pi_ip_address>` -> Enter 
+9. select `Connect` from the pop-up window & enter your prompted raspberry pi password
 
 # Hardware 
 * Raspberry Pi Model B (3rd generation & up) 
