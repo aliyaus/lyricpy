@@ -13,15 +13,16 @@ import os
 api_key = os.getenv('API_KEY')
 ```
 
+### Setup I2C with Raspberry Pi 
+1. follow https://www.youtube.com/watch?v=3XLjVChVgec&t=122s for setup & driver installation 
+
 # How to run 
 1. run `pip install -r requirements.txt` to install required packages 
 2. run the following command in your terminal `python3 main.py` 
 
-
 # References 
 * https://github.com/fashni/MxLRC
 * https://github.com/akashrchandran/spotify-lyrics-api
-* https://www.youtube.com/watch?v=3XLjVChVgec&t=122s
 
 #### Downstream APIs
 * for lyric fetching - https://developer.musixmatch.com/documentation 
