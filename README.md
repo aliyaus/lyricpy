@@ -39,3 +39,5 @@ api_key = os.getenv('API_KEY')
 # Future enhancements & ideas
 - add LED lights to glow when device is listening to detect song 
 - add song detection 
+  - https://willdrevo.com/fingerprinting-and-audio-recognition-with-python/
+  - https://github.com/worldveil/dejavu
