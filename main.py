@@ -27,8 +27,6 @@ def display_lyrics(lines):
   start_time = time.time() 
 
   while not q.is_empty():
-    intro_message = "Playing " + song.title + " by ", song.artist
-    display.lcd_display_string(intro_message, 1)   
     line_time, line = q.peek()
     elapsed_time = time.time() - start_time
     elapsed_secs = "{:.3f}".format(elapsed_time)
@@ -42,6 +40,7 @@ def display_lyrics(lines):
       display.lcd_display_string(l2, 2)      
       display.lcd_display_string(l3, 3)      
       display.lcd_display_string(l4, 4)             
+
 
 def main():
   run_time = time.strftime("%Y%m%d_%H%M%S")
