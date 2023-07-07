@@ -27,7 +27,7 @@ api_key = os.getenv('API_KEY')
 * for lyric fetching - https://developer.musixmatch.com/documentation 
 
 #### Connect LCD to Pi
-* https://medium.com/@thedyslexiccoder/how-to-set-up-a-raspberry-pi-4-with-lcd-display-using-i2c-backpack-189a0760ae15
+* https://www.youtube.com/watch?v=3XLjVChVgec&t=122s
 
 #### Setup SSH to Pi
 * https://robertopozzi.medium.com/how-to-setup-ssh-to-connect-your-raspberry-pi-6dac4e454731
