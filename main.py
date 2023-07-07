@@ -25,6 +25,7 @@ def display_lyrics(lines):
 
   # Start clock 
   start_time = time.time() 
+  print("playing...")
 
   while not q.is_empty():
     line_time, line = q.peek()
