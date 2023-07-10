@@ -5,6 +5,9 @@ import datetime
 from q import MyCustomQueue
 from utils import parse_time_and_clean_line, convert_mmssmmm_to_seconds, split_string
 
+# a slight/buffer before displaying lyric 
+DISPLAY_BUFFER = 1.5
+
 def display_lyrics(lines, display):
   q = MyCustomQueue()
 
@@ -38,6 +41,7 @@ def display_lyrics(lines, display):
       display.lcd_display_string(l2, 2)      
       display.lcd_display_string(l3, 3)      
       display.lcd_display_string(l4, 4)
+      time.sleep(DISPLAY_BUFFER)
 
   if q.is_empty():
     display.lcd_clear()   

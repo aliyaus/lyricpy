@@ -13,7 +13,7 @@ from time import sleep
 display = drivers.Lcd()
   
 def on_button_press():
-  song = Song("Lost", "Frank Ocean")
+  song = Song("Nights", "Frank Ocean")
   display.lcd_display_string("Finding song...", 1) 
   print("Retrieving info for: ", song.__str__())
   print()
@@ -22,6 +22,7 @@ def on_button_press():
   if lrc is not None:
     lines = lrc.split('\n')  
     print("Song lyrics retrieved!") 
+    print(lrc)
     display.lcd_display_string("Song lyrics retrieved XD", 1) 
     display_lyrics(lines, display)
   else:
