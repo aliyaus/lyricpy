@@ -4,6 +4,15 @@
 - on button click -> fetch lyrics for a single song -> sync the lyrics -> and display each line to LCD display
 
 # Prerequisites 
+### Generate Acoustid API Key 
+1. run the following command in your terminal `export API_KEY="your_api_key"`
+2. import API_KEY as follows:
+```
+import os
+api_key = os.getenv('API_KEY')
+```
+* note to view the current exported API_KEY run `echo $API_KEY` 
+
 ### Install necessary dependencies 
 1. run `pip install -r requirements.txt` 
 

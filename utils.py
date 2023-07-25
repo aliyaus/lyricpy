@@ -1,7 +1,7 @@
 import time
 import re 
 
-# Function to parse time from the line
+# Function to parse time from the line for syncedlyrics type
 def parse_time_and_clean_line(line):
 
   # Extract timestamp inside brackets

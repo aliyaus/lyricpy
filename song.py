@@ -1,10 +1,9 @@
 class Song:
-    def __init__(self, title, artist, id = "", has_lyrics = "", has_subtitles = ""):
+    def __init__(self, title, artist, lyrics = "", subtitles = ""):
         self.title = title
         self.artist = artist
-        self.id = id
-        self.has_lyrics = has_lyrics
-        self.has_subtitles = has_subtitles
+        self.lyrics = lyrics
+        self.subtitles = subtitles
         self.duration = 0
 
     def __str__(self) -> str:

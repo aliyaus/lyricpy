@@ -8,7 +8,7 @@ from utils import parse_time_and_clean_line, convert_mmssmmm_to_seconds, split_s
 # a slight/buffer before displaying lyric 
 DISPLAY_BUFFER = 1.5
 
-def display_lyrics(lines, display):
+def display_lyrics(lines, display, song_position=None):
   q = MyCustomQueue()
 
   # parse timestamp and lyric from each line and push into queue
